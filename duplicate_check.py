@@ -60,7 +60,7 @@ for name, full in l_files.items():
 
 if PRETTY_PRINT:
     table = PrettyTable(
-        ["File Name", "L consists R Percentage", "L Path", "R Path"])
+        ["File Name", "L Path", "R Path", "L consists R Percentage"])
     for entry in duplicate_result:
         table.add_row(entry)
     print(table)
