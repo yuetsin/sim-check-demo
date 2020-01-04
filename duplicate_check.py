@@ -13,7 +13,15 @@ except:
 
 args = sys.argv
 
-executable = "./sim_c"
+if sys.platform == 'win32':
+    executable = ".\\sim_c.exe"
+elif sys.platform == 'darwin':
+    executable = "./sim_c_darwin"
+else:
+    print("unsupported platform %s" % sys.platform)
+    exit(-2)
+
+
 target_extension = ['.c', '.cc', '.cpp', '.h', '.hpp']
 
 split_words = ["consists for ", " of"]
