@@ -7,6 +7,10 @@ simple duplication check script based on [SIM](https://dickgrune.com/Programs/si
 
 * get prettier tables display by `pip install prettytable`
 
+* supported platform
+  
+  * Windows (`win32`)
+  * macOS (`darwin`)
 ## example
 
 ![Image A](https://github.com/yuetsin/sim-check-demo/blob/master/img_a.png?raw=true)
