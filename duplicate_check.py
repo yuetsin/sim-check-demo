@@ -71,4 +71,4 @@ Left File: %s
 Right File: %s
 
 Shared Name: %s
-Similarity Percentage: %s""" % (entry[0], entry[1], entry[2], entry[3]))
+Similarity Percentage: %s""" % (entry[1], entry[2], entry[0], entry[3]))
