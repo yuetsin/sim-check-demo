@@ -14,6 +14,7 @@ simple duplication check script based on [SIM](https://dickgrune.com/Programs/si
 * get prettier tables display by `pip install prettytable`
 
 * supported languages
+  * 8086 Assembly
   * C
   * C++
   * Java
@@ -21,7 +22,7 @@ simple duplication check script based on [SIM](https://dickgrune.com/Programs/si
   * Modula-2
   * Miranda
   * Pascal
-  * General Text
+  * Plain Text
 
 * supported platform
   * Windows (`win32`)
