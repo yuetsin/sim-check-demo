@@ -1,6 +1,18 @@
 # sim-check-demo
 simple duplication check script based on [SIM](https://dickgrune.com/Programs/similarity_tester/). [LICENSE](https://github.com/yuetsin/sim-check-demo/blob/master/SIM_LICENSE.txt)
 
+|  Environment | Python Version | Build Status  |
+|  :-:  | :-: | :-: |
+| vs2017-win2016 | `3.5` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=Windows&configuration=Windows%20Python35)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| vs2017-win2016 | `3.6` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=Windows&configuration=Windows%20Python36)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| vs2017-win2016 | `3.7` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=Windows&configuration=Windows%20Python37)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| ubuntu-16.04 | `3.5` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=Linux&configuration=Linux%20Python35)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| ubuntu-16.04 | `3.6` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=Linux&configuration=Linux%20Python36)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| ubuntu-16.04 | `3.7` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=Linux&configuration=Linux%20Python37)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| macOS-10.13 | `3.5` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=macOS&configuration=macOS%20Python35)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| macOS-10.13 | `3.6` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=macOS&configuration=macOS%20Python36)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+| macOS-10.13 | `3.7` | [![Build Status](https://dev.azure.com/msbiglawgood/sim-check/_apis/build/status/yuetsin.sim-check-demo?branchName=master&jobName=macOS&configuration=macOS%20Python37)](https://dev.azure.com/msbiglawgood/sim-check/_build/latest?definitionId=2&branchName=master) |
+
 ## usage
 
 `./duplicate_check.py <language> <path_a> <path_b>`
