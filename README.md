@@ -3,14 +3,25 @@ simple duplication check script based on [SIM](https://dickgrune.com/Programs/si
 
 ## usage
 
-`./duplicate_check.py <path_a> <path_b>`
+`./duplicate_check.py <language> <path_a> <path_b>`
 
 * get prettier tables display by `pip install prettytable`
 
+* supported languages
+  * C
+  * C++
+  * Java
+  * Lisp
+  * Modula-2
+  * Miranda
+  * Pascal
+  * General Text
+
 * supported platform
-  
   * Windows (`win32`)
   * macOS (`darwin`)
+  * Linux (`linux`)
+
 ## example
 
 ![Image A](https://github.com/yuetsin/sim-check-demo/blob/master/img_a.png?raw=true)
