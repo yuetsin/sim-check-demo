@@ -71,7 +71,11 @@ for name, full in l_files.items():
     if name in r_files:
         r_full = r_files[name]
         response = os.popen("%s -p %s %s" %
-                            (executable, l_full, r_full)).readlines()[-1]
+                            (executable, l_full, r_full)).readlines()
+        if response != []:
+            response = response[-1]
+        else:
+            continue
         result = re.split('|'.join(split_words), response.replace(
             l_full, '').replace(r_full, ''))
         if len(result) == 3:
