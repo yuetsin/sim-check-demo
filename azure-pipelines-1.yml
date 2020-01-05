@@ -67,8 +67,24 @@ jobs:
   - task: UsePythonVersion@0
     inputs:
       versionSpec: '$(python.version)'
-
+      
   - script: pip install -r requirements.txt
     displayName: 'Install requirements'
-  - script: call test.bat
-    displayName: 'Run Test Cases'
+  - script: python .\duplicate_check.py 8086asm .\test_a .\test_b
+    displayName: 'Run 8086asm Test Cases'
+  - script: .\duplicate_check.py c .\test_a .\test_b
+    displayName: 'Run c Test Cases'
+  - script: .\duplicate_check.py c++ .\test_a .\test_b
+    displayName: 'Run c++ Test Cases'
+  - script: .\duplicate_check.py java .\test_a .\test_b
+    displayName: 'Run java Test Cases'
+  - script: .\duplicate_check.py lisp .\test_a .\test_b
+    displayName: 'Run lisp Test Cases'
+  - script: .\duplicate_check.py m2 .\test_a .\test_b
+    displayName: 'Run m2 Test Cases'
+  - script: .\duplicate_check.py miranda .\test_a .\test_b
+    displayName: 'Run miranda Test Cases'
+  - script: .\duplicate_check.py pascal .\test_a .\test_b
+    displayName: 'Run pascal Test Cases'
+  - script: .\duplicate_check.py text .\test_a .\test_b
+    displayName: 'Run plain text Test Cases'
