@@ -1,0 +1,25 @@
+- job:
+  pool:
+    vmImage: 'ubuntu-16.04'
+  strategy:
+    matrix:
+      Python27:
+        python.version: '2.7'
+      Python35:
+        python.version: '3.5'
+      Python36:
+        python.version: '3.6'
+      Python37:
+        python.version: '3.7'
+
+  steps:
+  - task: UsePythonVersion@0
+    displayName: 'Use Python $(python.version)'
+    inputs:
+      versionSpec: '$(python.version)'
+
+  - script: pip install prettytable
+    displayName: 'Install PrettyTable'
+
+  - script: ./test.sh
+    displayName: 'Run Test Cases'
