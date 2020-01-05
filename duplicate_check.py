@@ -71,13 +71,14 @@ for name, full in l_files.items():
     if name in r_files:
         r_full = r_files[name]
         response = os.popen("%s -p %s %s" %
-                            (executable, l_full, r_full)).read()
+                            (executable, l_full, r_full)).readlines()[-1]
         result = re.split('|'.join(split_words), response.replace(
             l_full, '').replace(r_full, ''))
         if len(result) == 3:
             percentage = result[1]
-
-        duplicate_result.append([name, l_full, r_full, percentage])
+            duplicate_result.append([name, l_full, r_full, percentage])
+        else:
+            duplicate_result.append([name, l_full, r_full, "N/R"])
     else:
         duplicate_result.append([name, l_full, "Not Found", "N/A"])
 
