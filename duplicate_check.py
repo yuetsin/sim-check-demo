@@ -70,7 +70,7 @@ for name, full in l_files.items():
     l_full = full
     if name in r_files:
         r_full = r_files[name]
-        response = os.popen("%s -p %s %s" %
+        response = os.popen('"%s" -p "%s" "%s"' %
                             (executable, l_full, r_full)).readlines()
         if response != []:
             response = response[-1]
